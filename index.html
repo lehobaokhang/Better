@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset='UTF-8'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700,900" />
+    <!-- slideshow bootsrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- end slideshow -->
+    <style>
+        /* Hide page by default */
+        
+        html {
+            display: none;
+        }
+    </style>
+
+    <script>
+        if (self == top) {
+            // Everything checks out, show the page.
+            document.documentElement.style.display = 'block';
+        } else {
+            // Break out of the frame.
+            top.location = self.location;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="menu">
+            <li><a href="#">MY ACCOUNT</a></li>
+            <li><a href="#">MY WISHLIST</a></li>
+            <li><a href="#">MY CART</a></li>
+            <li><a href="#">CHECKOUT</a></li>
+            <li><a href="#">LOG IN</a></li>
+        </ul>
+        <p style="padding-left: 20px">YOUR LANGUAGES</p>
+        <ul class="lang">
+            <li>
+                <a href=""><img src="images/21_Hover_Setting_03.png"></a>
+            </li>
+            <li>
+                <a href=""><img src="images/21_Hover_Setting_05.png"></a>
+            </li>
+            <li>
+                <a href=""><img src="images/21_Hover_Setting_07.png"></a>
+            </li>
+            <li>
+                <a href=""><img src="images/21_Hover_Setting_09.png"></a>
+            </li>
+        </ul>
+        <p style="padding-left: 20px">CURRENCY</p>
+        <ul class="lang">
+            <li><a href="">EUR</a></li>
+            <li><a href="">USA</a></li>
+            <li><a href="">VND</a></li>
+            <li><a href="">JPY</a></li>
+        </ul>
+    </div>
+
+    <div id="my_Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="close_Nav()">&times;</a>
+        <p style="padding: 30px; padding-bottom: 0">SEARCH</p>
+        <div class="topnav">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <p style="padding:30px">Top population keywords: Shoes, Blouse, Jean, etc...</p>
+    </div>
+
+    <div id="mySidenav-01" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        <p style="padding: 30px; padding-bottom: 0">ITEM TO CART</p>
+        <div class="item-cart">
+            <div class="item-cart-img">
+                <img src="images/19_Hover_Cart_03.png">
+            </div>
+            <div class="item-cart-text">
+                <p>Item 01</p>
+                <span style="font-family: oswald">$67.05</span>
+                <h4 style="font-family: oswald;color: #a4a4a4">QTY: 2</h4>
+            </div>
+            <button><i class="fa fa-shopping-basket"></i></button>
+        </div>
+        <div class="item-cart">
+            <div class="item-cart-img">
+                <img src="images/19_Hover_Cart_06.png">
+            </div>
+            <div class="item-cart-text">
+                <p>Item 02</p>
+                <span style="font-family: oswald">$67.05</span>
+                <h4 style="font-family: oswald;color: #a4a4a4">QTY: 2</h4>
+            </div>
+            <button><i class="fa fa-shopping-basket"></i></button>
+        </div>
+        <div class="item-cart">
+            <div class="item-cart-img">
+                <img src="images/19_Hover_Cart_08.png">
+            </div>
+            <div class="item-cart-text">
+                <p>Item 03</p>
+                <span style="font-family: oswald">$67.05</span>
+                <h4 style="font-family: oswald;color: #a4a4a4">QTY: 2</h4>
+            </div>
+            <button><i class="fa fa-shopping-basket"></i></button>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div id="header">
+            <div class="logo">
+                <a href="">
+                    <img src="images/02_Homepage_01_03.png">
+                </a>
+            </div>
+            <div class="icon_top">
+                <div class="search">
+                    <span style="cursor:pointer" onclick="open_Nav()"><img src="images/02_Homepage_01_06.png"></span>
+                </div>
+                <div class="sale">
+                    <span style="cursor:pointer" onclick="openNav1()"><img src="images/02_Homepage_01_08.png"></span>
+                </div>
+                <div class="menu_hover">
+                    <span style="cursor:pointer" onclick="openNav()"><img src="images/02_Homepage_01_10.png"></span>
+                </div>
+            </div>
+            <div class="menu_bar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <span class="dropbtn">SHOP</span>
+                        <div class="dropdown-content fade">
+                            <div class="all">
+                                <div class="shop_menu">
+                                    <div class="shop_01">
+                                        <div class="bag">
+                                            <h3>STYLIST BAG</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Clutch Handbags</a></li>
+                                                <li><a href="">> Diaper Bags</a></li>
+                                                <li><a href="">> Bags</a></li>
+                                                <li><a href="">> Hobo Handbags</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>MATERIAL BAG</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Beaded Handbags</a></li>
+                                                <li><a href="">> Fabric Handbags</a></li>
+                                                <li><a href="">> Handbags</a></li>
+                                                <li><a href="">> Leather Handbags</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>SHOE</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Flat Shoes</a></li>
+                                                <li><a href="">> Flat Sandals</a></li>
+                                                <li><a href="">> Boots</a></li>
+                                                <li><a href="">> Heels</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shop_02">
+                                        <div class="bag">
+                                            <h3>JWELLERY</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Bracelets</a></li>
+                                                <li><a href="">> Necklaces & Pendants</a></li>
+                                                <li><a href="">> Pendants</a></li>
+                                                <li><a href="">> Pins & Brooches</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>DRESSES</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Casual Dresses</a></li>
+                                                <li><a href="">> Evening</a></li>
+                                                <li><a href="">> Designer</a></li>
+                                                <li><a href="">> Party</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>SWIMWEAR</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Swimsuits</a></li>
+                                                <li><a href="">> Beach Clothing</a></li>
+                                                <li><a href="">> Clothing</a></li>
+                                                <li><a href="">> Bikinis</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img_shop">
+                                    <img src="images/20_Hover_Mega_menu_03.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span class="dropbtn">COLLECTION</span>
+                        <div class="dropdown-content fade">
+                            <div class="all">
+                                <div class="shop_menu">
+                                    <div class="shop_01">
+                                        <div class="bag">
+                                            <h3>STYLIST BAG</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Clutch Handbags</a></li>
+                                                <li><a href="">> Diaper Bags</a></li>
+                                                <li><a href="">> Bags</a></li>
+                                                <li><a href="">> Hobo Handbags</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>MATERIAL BAG</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Beaded Handbags</a></li>
+                                                <li><a href="">> Fabric Handbags</a></li>
+                                                <li><a href="">> Handbags</a></li>
+                                                <li><a href="">> Leather Handbags</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>SHOE</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Flat Shoes</a></li>
+                                                <li><a href="">> Flat Sandals</a></li>
+                                                <li><a href="">> Boots</a></li>
+                                                <li><a href="">> Heels</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="shop_02">
+                                        <div class="bag">
+                                            <h3>JWELLERY</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Bracelets</a></li>
+                                                <li><a href="">> Necklaces & Pendants</a></li>
+                                                <li><a href="">> Pendants</a></li>
+                                                <li><a href="">> Pins & Brooches</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>DRESSES</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Casual Dresses</a></li>
+                                                <li><a href="">> Evening</a></li>
+                                                <li><a href="">> Designer</a></li>
+                                                <li><a href="">> Party</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="bag">
+                                            <h3>SWIMWEAR</h3>
+                                            <hr>
+                                            <ul>
+                                                <li><a href="">> Swimsuits</a></li>
+                                                <li><a href="">> Beach Clothing</a></li>
+                                                <li><a href="">> Clothing</a></li>
+                                                <li><a href="">> Bikinis</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img_shop">
+                                    <img src="images/20_Hover_Mega_menu_03.png">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="example.html">ABOUT</a></li>
+                    <li><a href="leicester.html">BLOG</a></li>
+                    <li><a href="carousel.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content">
+            <div class="slideshow col-01">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/02_Homepage_01_17.png">
+                            <div class="carousel-caption">
+                                <h1>GARDEN SPRING</h1>
+                                <input type="submit" name="buy_01" value="BUY NOW">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/02_Homepage_01_17.png">
+                            <div class="carousel-caption">
+                                <h1>GARDEN SPRING</h1>
+                                <input type="submit" name="buy_01" value="BUY NOW">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/02_Homepage_01_17.png">
+                            <div class="carousel-caption">
+                                <h1>GARDEN SPRING</h1>
+                                <input type="submit" name="buy_01" value="BUY NOW">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/02_Homepage_01_17.png">
+                            <div class="carousel-caption">
+                                <h1>GARDEN SPRING</h1>
+                                <input type="submit" name="buy_01" value="BUY NOW">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="promotion">
+                <div class="text_01">
+                    <div class="exceptional">
+                        <b><p>EXCEPTIONAL</p></b>
+                        <h1>Services We Offer</h1>
+                    </div>
+                    <div class="text_01_01">
+                        <p>BETTER is a simply beautiful and delightful PSD template speacially designed for gardening and home decoration online shop. You will immediately fall in love with those cheerful and easily customizable layouts of BETTER. A perfect
+                            choice for your little adorable shop. Go for it! We provide exceptional Garden services to a wide range of commercial and residential properties for over 10 years...</p>
+                    </div>
+                </div>
+                <div class="image image_01">
+                    <div class="container">
+                        <div class="row1">
+                            <div class="column active">
+                                <p class="demo cursor" onclick="currentSlide(1)">Gift from Flower</p>
+                            </div>
+                            <div class="column">
+                                <p class="demo cursor" onclick="currentSlide(2)">Planting of Garden</p>
+                            </div>
+                            <div class="column">
+                                <p class="demo cursor" onclick="currentSlide(3)">Indoor Decorations</p>
+                            </div>
+                        </div>
+
+                        <div class="mySlide fade">
+                            <img src="images/the-hayden-full-1460745825-bloomthat_thehayden@2x.png" style="max-width:300px;height: 400px">
+                        </div>
+
+                        <div class="mySlide fade">
+                            <img src="images/Fotolia_92360029_Subscription_Monthly_XXL.jpg" style="max-width: 400px;height: 400px">
+                        </div>
+
+                        <div class="mySlide fade">
+                            <img src="images/02_Homepage_01_55.jpg" style="width: 350px;height: 400px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block_static">
+                <div class="text_02">
+                    <b><h2>FLOWER CARE WORKERS!</h2></b>
+                    <p>We have workers skilled flower care, with many years of experience in the profession, the meticulously cared create the best products for customers</p>
+                    <div class="bs_submit">
+                        <input type="submit" name="contact" value="CONTACT NOW" style="background-color: #000; color: #fff">
+                    </div>
+                </div>
+                <div class="image image_02">
+                    <img src="images/Fotolia_92360029_Subscription_Monthly_XXL.jpg">
+                </div>
+            </div>
+            <div class="new_product">
+                <div class="arrows">
+                    <img src="images/02_Homepage_01_21.png">
+                    <div class="prev_next">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+                <div class="promotions">
+                    <div class="img_pro">
+                        <img src="images/02_Homepage_01_30.jpg">
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></i>
+                                                    </a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-item">
+                                    <div class="item-product">
+                                        <div class="product-thumb">
+                                            <a class="product-thumb-link" href="#">
+                                                <img class="first-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                                <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                                <img class="second-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                            </a>
+                                            <div class="product-info-cart">
+                                                <div class="product-extra-link">
+                                                    <a href="#" class="wishlist-link"></a>
+                                                    <a href="#" class="compare-link"></a>
+                                                    <a href="#" class="quickview-link"></a>
+                                                </div>
+                                                <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <!-- Button to Open the Modal -->
+                <a class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    <img src="images/02_Homepage_01_43.png">
+                    <h2 style="color: #fff">LASTEST VIDEO CLIP</h2>
+                </a>
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <iframe width="854" height="480" src="https://www.youtube.com/embed/YpLkuJqPhPM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature_items">
+                <div class="arrows">
+                    <img src="images/02_Homepage_01_46.png">
+                    <ul>
+                        <li>
+                            <a href="#"></a>HOME DECOR</li>
+                        <li>
+                            <a href="#"></a>WORKSPACE</li>
+                        <li>
+                            <a href="#"></a>OUT DOOR</li>
+                        <li>
+                            <a href="#"></a>FOR GIFT</li>
+                    </ul>
+                </div>
+                <div class="promotions">
+                    <div class="img_pro">
+                        <img src="images/02_Homepage_01_49.jpg">
+                    </div>
+                    <div class="abc">
+                        <div class="item">
+                            <div class="owl-item">
+                                <div class="item-product">
+                                    <div class="product-thumb">
+                                        <a class="product-thumb-link" href="#">
+                                            <img class="first-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                            <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                            <img class="second-thumb" alt="" src="images/02_Homepage_01_51.jpg">
+                                        </a>
+                                        <div class="product-info-cart">
+                                            <div class="product-extra-link">
+                                                <a href="#" class="wishlist-link"></a>
+                                                <a href="#" class="compare-link"></a>
+                                                <a href="#" class="quickview-link"></a>
+                                            </div>
+                                            <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="owl-item">
+                                <div class="item-product">
+                                    <div class="product-thumb">
+                                        <a class="product-thumb-link" href="#">
+                                            <img class="first-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                            <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                            <img class="second-thumb" alt="" src="images/02_Homepage_01_52.jpg">
+                                        </a>
+                                        <div class="product-info-cart">
+                                            <div class="product-extra-link">
+                                                <a href="#" class="wishlist-link"></a>
+                                                <a href="#" class="compare-link"></a>
+                                                <a href="#" class="quickview-link"></a>
+                                            </div>
+                                            <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="owl-item">
+                                <div class="item-product">
+                                    <div class="product-thumb">
+                                        <a class="product-thumb-link" href="#">
+                                            <img class="first-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                            <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                            <img class="second-thumb" alt="" src="images/02_Homepage_01_55.jpg">
+                                        </a>
+                                        <div class="product-info-cart">
+                                            <div class="product-extra-link">
+                                                <a href="#" class="wishlist-link"></a>
+                                                <a href="#" class="compare-link"></a>
+                                                <a href="#" class="quickview-link"></a>
+                                            </div>
+                                            <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="owl-item">
+                                <div class="item-product">
+                                    <div class="product-thumb">
+                                        <a class="product-thumb-link" href="#">
+                                            <img class="first-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                            <p style="color: #000;">Small tree house <span><b>$67.05</b></span></p>
+                                            <img class="second-thumb" alt="" src="images/02_Homepage_01_57.jpg">
+                                        </a>
+                                        <div class="product-info-cart">
+                                            <div class="product-extra-link">
+                                                <a href="#" class="wishlist-link"></a>
+                                                <a href="#" class="compare-link"></a>
+                                                <a href="#" class="quickview-link"></a>
+                                            </div>
+                                            <a href="#" class="addcart-link"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lastest_news">
+                <div class="arrows">
+                    <img src="images/02_Homepage_01_61.png">
+                </div>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="promotions">
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/team4-m-min.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>PLANTING & REMOVAL</b></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/photo-1455819413567-ef04b7e1fe3d.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>BETTER DESIGN</b></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/team_06-848x480.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>GARDEN CARE</b></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="promotions">
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/photo-1455819413567-ef04b7e1fe3d.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>BETTER DESIGN</b></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/team4-m-min.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>PLANTING & REMOVAL</b></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/team_06-848x480.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>GARDEN CARE</b></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="promotions">
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/team_06-848x480.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>GARDEN CARE</b></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/photo-1455819413567-ef04b7e1fe3d.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>BETTER DESIGN</b></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                                <div class="news">
+                                    <div class="image_03">
+                                        <img src="images/team4-m-min.png">
+                                    </div>
+                                    <div class="text_03">
+                                        <h3><b>PLANTING & REMOVAL</b></h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc lacinia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_letters">
+                <div class="text_04">
+                    <h2><b>NEWSLETTER SIGN-UP</b></h2>
+                    <p>We make sure you do not miss any news</p>
+                </div>
+                <form class="email">
+                    <input type="text" name="email" class="text_email" placeholder="Enter your email..." value="">
+                    <input type="submit" class="sub_email" name="sub_email" value="SIGN UP">
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="service">
+                <div class="our_offer">
+                    <h3><b>ABOUT US</b></h3>
+                    <p>We provide exceptional Garden services to a wide range of commercial and residential properties for over 35 years, including large corporate environments, city parks, shopping...</p>
+                </div>
+                <div class="store">
+                    <h3><b>STORE</b></h3>
+                    <ul>
+                        <li><a href="">New York</a></li>
+                        <li><a href="">Paris</a></li>
+                        <li><a href="">London</a></li>
+                        <li><a href="">Madrid</a></li>
+                        <li><a href="">Tokyo</a></li>
+                        <li><a href="">Milan</a></li>
+                        <li><a href="">Ha Noi</a></li>
+                    </ul>
+                </div>
+                <div class="our_services">
+                    <h3><b>OUR SERVICES</b></h3>
+                    <ul>
+                        <li><a href="">Order tracking</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                        <li><a href="">Shipping Information</a></li>
+                        <li><a href="">Returns & refunds</a></li>
+                        <li><a href="">Personalised Cards</a></li>
+                        <li><a href="">Delivery information</a></li>
+                    </ul>
+                </div>
+                <div class="our_contact">
+                    <h3><b>OUR CONTACT</b></h3>
+                    <div class="place">
+                        <img src="images/02_Homepage_01_76.png">
+                        <p>United Kingdom, London</p>
+                        <p>Simple Street 15A</p>
+                    </div>
+                    <div class="phone">
+                        <img src="images/02_Homepage_01_79.png">
+                        <p>(123) 123.456.7890</p>
+                        <p>(123) 123.456.7890</p>
+                    </div>
+                    <div class="inbox">
+                        <img src="images/02_Homepage_01_82.png">
+                        <a href="https://facebook.com" target="_blank">Support@casetheme.com</a>
+                        <a href="https://facebook.com" target="_blank">Admin@casetheme.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">COPYRIGHT &copy 2015 BY <a target="_blank" href="https://gmail.com" style="color: #fff">CASETHEME</a>. ALL RIGHTS RESERVED</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/slide.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
